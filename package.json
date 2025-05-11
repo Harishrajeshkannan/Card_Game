@@ -1,0 +1,14 @@
+{
+  "name": "cards-game",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "ejs": "^3.1.9",
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cards Game</title>
+  </head>
+  <body>
+    <div id="game">
+      <div id="display">
+        <div id="comp">
+          <div class="image"><img src="<%= compCardImage %>" alt="" /></div>
+          <div class="name"><%= compCardNum %> <%= compCardSuit %></div>
+        </div>
+        <div id="user">
+          <div class="image"><img src="<%= userCardImage %>" alt="" /></div>
+          <div class="name"><%= userCardNum %> <%= userCardSuit %></div>
+        </div>
+      </div>
+      <div id="selections">
+        <form action="/draw" method="POST">
+          <button type="submit">Pick a new card</button>
+        </form>
+        <form action="/new-deck" method="POST">
+          <button type="submit">New deck</button>
+        </form>
+      </div>
+      <div id="result">
+        <% if(locals.userVal){ %>
+        <div id="res_inp">
+          <% if(userVal>compVal){ %>
+          <p>YOU WON!</p>
+          <% }else if(userVal==compVal) {%>
+          <p>Draw</p>
+          <% }else{ %>
+          <p>YOU LOST..</p>
+          <% } %> <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../index.js"></script>
+</html>

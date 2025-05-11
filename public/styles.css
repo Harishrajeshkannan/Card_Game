@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#game{
+    width: 60%;
+    height: 90vh;
+    background-color: rgb(173, 164, 164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+}
+
+#display{
+    width: 80%;
+    height: 60%;
+    background-color: rgb(194, 204, 214);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#comp,#user{
+    width: 45%;
+    background-color: aquamarine;
+    border: 5px solid rgb(106, 103, 103);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image{
+    height: 85%;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#selections{
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+button{
+    width: 12rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+button:active{
+    box-shadow: 2px 2px;
+    border: 2px solid black;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#res_inp{
+    font-size: 25px;
+}
